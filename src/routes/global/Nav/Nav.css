@@ -1,0 +1,156 @@
+.Nav {
+  height: 100vh;
+  background: var(--purple);
+  width: 20%;
+}
+
+.Nav h1 {
+  text-align: center;
+  margin-top: 1em;
+  color: #fff;
+}
+
+.Nav h1 span {
+  color: var(--blue);
+  font-size: 30px;
+}
+
+.Nav .top {
+  padding: 4em 2em 2em 2em;
+}
+
+.Nav .top {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 30%;
+}
+
+.Nav .profile-picture {
+  height: 7em;
+  /* border-radius: 50%; */
+  clip-path: circle();
+}
+
+.Nav .name {
+  display: block;
+  color: #fff;
+  margin-top: 0.5em;
+  font-weight: 700;
+  font-size: var(--medium-font);
+}
+
+.Nav .link {
+  font-size: var(--medium-font);
+  color: #fff;
+  font-weight: 700;
+
+  width: 100%;
+  align-items: center;
+  cursor: pointer;
+  transition: var(--transition-time);
+}
+
+.Nav a {
+  text-decoration: none;
+}
+
+.Nav .link-container {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 0 2em 0;
+}
+
+.Nav .icon-container {
+  width: 3em;
+}
+
+.Nav .icon {
+  color: #fff;
+  font-size: 22px;
+}
+
+.Nav .link:hover {
+  background: var(--blue);
+}
+
+.Nav .link .link-name {
+  margin-left: 1.2em;
+}
+
+.Nav {
+  transition: 0.3s;
+  transform: translateY();
+  z-index: 1;
+  height: 100vh;
+}
+
+@media (max-width: 1245px) {
+  .Nav.open {
+    display: block !important;
+    position: fixed;
+    width: 300px;
+  }
+
+  .Nav.closed {
+    /* visibility: hidden; */
+    display: none;
+  }
+  * {
+    overflow-y: auto;
+    overflow-x: auto;
+  }
+
+  span,
+  p {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  .content {
+    overflow: none;
+    width: 100% !important;
+  }
+
+  .App {
+    display: block;
+  }
+
+  .content {
+    overflow: hidden;
+    height: 130vh;
+    margin-top: 4em;
+  }
+}
+
+.App .header {
+  padding: 1.2em 0px 1.2em 3em;
+  display: flex;
+  align-items: center;
+  background: var(--purple);
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+}
+
+.App .header h1 {
+  margin-left: 1em;
+  color: #fff;
+  font-size: 20px;
+}
+
+.App .hamburger {
+  display: block;
+  color: var(--blue);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media (min-width: 1246px) {
+  .header {
+    display: none !important;
+  }
+}

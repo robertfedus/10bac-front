@@ -1,0 +1,31 @@
+h3 {
+  color: green;
+}
+
+section .container {
+  display: flex;
+  align-items: center;
+}
+
+section .container form {
+  margin-left: 0em;
+}
+
+section button {
+  width: 8em;
+  border-radius: 6px;
+  height: 2.5em;
+  border: none;
+  cursor: pointer;
+  background: var(--dark-purple);
+  color: #fff;
+  border-bottom: 2px solid var(--dark-purple);
+}
+
+section button:hover {
+  border-bottom-color: var(--blue);
+}
+
+section p {
+  line-height: 1.7;
+}
